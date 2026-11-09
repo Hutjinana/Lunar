@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artemis Lunar Landing Site Navigator</title>
+    <meta name="description" content="Interactive 3D Sun-Earth-Moon orbital system and lunar south-polar terrain navigator with synthetic placeholder terrain (real LOLA DEM pending) and aerospace scientific specification review for the nine Artemis III candidate regions." />
+    <meta property="og:title" content="Artemis Lunar Landing Site Navigator" />
+    <meta property="og:description" content="Interactive 3D Sun-Earth-Moon orbital system and lunar south-polar terrain navigator with synthetic placeholder terrain (real LOLA DEM pending) and aerospace scientific specification review for the nine Artemis III candidate regions." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Browser Importmap for pinned Three.js and astronomy-engine ES Modules -->
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/",
+        "astronomy-engine": "https://cdn.jsdelivr.net/npm/astronomy-engine@2.1.19/esm/astronomy.js"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="/src/tailwind.generated.css" />
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-[#07090e] text-slate-100 antialiased overflow-hidden select-none">
+    <div id="root" class="w-screen h-screen overflow-hidden flex flex-col bg-[#07090e]"></div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
